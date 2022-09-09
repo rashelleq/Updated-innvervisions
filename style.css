@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Six+Caps&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Slab", serif;
+  color: #000;
+  background-color: #fff;
+  letter-spacing: 0.1em;
+  min-height: 100vh;
+  font-size: 1rem;
+}
+
+h1,
+h3 {
+  font-family: "Six Caps", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+button:focus {
+  outline: none;
+}
+
+/* NAV SECTION */
+
+nav {
+  background-color: #e5edef;
+}
+
+.navbar-brand {
+  font-family: "Six Caps", sans-serif;
+  font-size: 4rem;
+  margin-right: 0;
+  margin-bottom: 10px;
+  letter-spacing: 0.1em;
+}
+
+.nav-link {
+  font-family: "Josefin Slab", serif;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 20px;
+  letter-spacing: 0.1em;
+}
+.navbar-nav {
+  align-items: center;
+}
+
+nav button {
+  margin-right: 20px;
+}
+
+.nav-link {
+  margin: 15px;
+}
+
+.navbar-brand {
+  font-size: clamp(1rem, 10vw, 2rem);
+}
+
+/* HERO SECTION */
+.hero-image {
+  background-image: url("./images/camp-img.jpg");
+  height: clamp(300px, 400px, 400px);
+  background-position: right 35% bottom 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* INTRO SECTION */
+
+.main-photo-image img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  padding: 20px;
+  background-color: #a9c4cb;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  text-align: center;
+  background-color: #f9fbfb;
+}
+
+.intro-inner {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  column-gap: 3rem;
+  border-radius: 4rem;
+  padding: 1.5rem;
+}
+
+.intro p {
+  font-size: 1rem;
+}
+
+/* SERVICES SECTION HOMEPAGE */
+
+.services-cards {
+  background-color: hsl(192, 25%, 89%);
+  padding: 1rem;
+  margin: 2rem 0 1rem;
+}
+
+.services-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.services-cards button {
+  border-radius: 50%;
+  border: none;
+  height: 190px;
+  width: 190px;
+  background-color: #fff;
+  margin: 1rem;
+  padding-top: 1rem;
+}
+
+.services-cards button:hover {
+  transition-delay: 0.1.5s;
+  border: 2px solid #a9c4cb;
+  cursor: pointer;
+  background-color: #a9c4cb;
+  color: #fff;
+}
+
+.button-h3 {
+  font-size: 2rem;
+}
+
+/* TESTIMONIAL SECTION */
+
+.testimonial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/waterfall-img.jpg");
+  background-position: left 50% bottom 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 2rem;
+}
+
+.testimonial-inner {
+  margin: 5rem 0;
+  background-color: #a9c4cb;
+  text-align: center;
+  max-width: 85%;
+  padding: 2% 5%;
+}
+
+.testimonial-text {
+  padding: 1.5rem 2rem;
+}
+
+.testimonial hr {
+  background-color: #fff;
+  width: 50%;
+  margin: 1rem auto;
+}
+
+.carousel-control-prev .carousel-control-next {
+  width: 2%;
+}
+
+/* CALL TO ACTION SECTION */
+
+.call-to-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(192, 25%, 89%);
+  margin: 2rem 0;
+}
+
+.btn-section {
+  padding: 4% 10%;
+}
+
+.btn-section button {
+  background-color: #fff;
+  color: #000;
+  border: 0.1rem solid #a9c4cb;
+  padding: 1rem 3rem 0.8rem;
+  cursor: pointer;
+}
+
+.btn-section button:hover {
+  transition-delay: 0.1.5s;
+  background-color: #a9c4cb;
+  color: #fff;
+}
+
+.btn-section h3 {
+  font-size: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-inner a,
+ul,
+li {
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.vertical-line,
+.footer-nav-links {
+  display: none;
+}
+
+.brand-and-socials hr {
+  width: 50%;
+  margin: 1rem auto;
+}
+
+/* COPYRIGHT SECTION */
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #a9c4cb;
+  color: #fff;
+}
+
+/* SERVICES PAGE */
+
+.title-section {
+  text-align: center;
+  padding: 2rem 0 1rem;
+}
+
+.title-section h1 {
+  font-size: 3.2rem;
+}
+
+.title-section hr {
+  width: 20%;
+  margin: auto;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 3rem;
+  text-align: center;
+}
+
+.services-card {
+  background-color: #fff;
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.scroll-image {
+  background-image: url("./images/chakra-img.jpg");
+  height: clamp(300px, 400px, 400px);
+  background-position: right 35% bottom 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* MEDIA QUERY FOR LARGER SCREENS */
+
+@media (min-width: 798px) {
+  nav {
+    text-align: center;
+  }
+
+  .navbar-brand {
+    font-family: "Six Caps", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 10px;
+    padding-right: 0;
+    letter-spacing: 0.1em;
+  }
+
+  .nav-item {
+    width: 8.5rem;
+  }
+
+  /* HERO SECTION */
+  .hero-image {
+    height: 650px;
+    background-position: right 35% bottom 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  /* INTRO SECTION */
+
+  .main-photo-image img {
+    height: 375px;
+    width: 375px;
+    border-radius: 50%;
+    padding: 50px;
+    background-color: #a9c4cb;
+    margin-bottom: 1rem 2rem;
+  }
+
+  /* .main-photo-image img {
+    height: 550px;
+    width: 550px;
+    border-radius: 50%;
+    padding: 100px;
+    background-color: #a9c4cb;
+    margin-bottom: 1rem;
+    display: block;
+    position: absolute;
+    top: 115%;
+    left: 10%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+  } */
+
+  .intro-inner {
+    max-width: 70%;
+    padding: 1rem 3rem 1rem 0.5rem;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+  .intro-text {
+    text-align: left;
+  }
+
+  .intro-text p {
+    margin-top: 20px;
+  }
+
+  /* SERVICES  */
+  .services-cards button {
+    height: 200px;
+    width: 200px;
+    margin: 1.5rem;
+  }
+
+  .services-card {
+    padding: 5rem 10rem;
+  }
+
+  .service-container {
+    padding: 1rem 10rem;
+  }
+
+  .button-h3 {
+    font-size: 3rem;
+  }
+
+  /* TESTIMONIAL SECTION */
+
+  .testimonial-inner {
+    max-width: 75%;
+  }
+
+  .testimonial-inner h4 {
+    font-size: 1rem;
+  }
+
+  /* FOOTER SECTION */
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-inner {
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr;
+    column-gap: 1rem;
+  }
+
+  .brand-and-socials {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+
+  .fa-brands {
+    margin: 1rem 0.5rem;
+  }
+
+  .vertical-line {
+    border-left: 0.1rem solid #a9c4cb;
+    height: 80%;
+    margin: auto;
+    display: block;
+  }
+
+  .footer-nav-links {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .footer-nav-links li {
+    margin: 2rem;
+  }
+
+  .footer-nav-links a:hover {
+    font-weight: bold;
+  }
+}
